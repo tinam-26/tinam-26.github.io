@@ -10,12 +10,15 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <style>
+    	body{
+    		background: #061414;
+    	}
     	.sidenav {
     		width: 130px;
     		position: fixed;
     		z-index: 1;
-    		top: 20px;
-    		left: 10px;
+    		top: 250px;
+    		left: 60px;
     		background: #a34444
     		padding: 8px;
     	}
@@ -24,22 +27,29 @@
 			padding: 6px 8px 6px 16px;
 			text-decoration: none;
 			font-size: 25px;
-			color: #2196F3;
+			color: #6CC9C3;
 			display: block;
 		}
 
 		.sidenav a:hover {
- 			color: #064579;
+ 			color: #8ECDCE;
 		}
 
 		.main {
-			margin-left: 140px; /* Same width as the sidebar + left position in px */
-			font-size: 28px; /* Increased text to enable scrolling */
+			margin-left: 300px; 
+			font-size: 28px; 
 			padding: 0px 10px;
+			
+		}
+
+		.main p{
+			color: #ffffff;
 		}
 
 		.header{
-			
+			background: #8ECDCE;
+			margin-left: 300px; 
+			padding:0px 10px;
 		}
 
     </style>
@@ -54,11 +64,17 @@
     	<a href="#">Contact</a>
     </div>
 
+    <!-- header -->
+    <div class="header">
+    	<h2>title here</h2>
+    </div>
+
     <!--content-->
     <div class = "main">
     	<p>text text text</p>
-    	<h1>Hello, world!</h1>
     </div>
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
