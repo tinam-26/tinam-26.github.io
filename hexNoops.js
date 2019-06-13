@@ -48,6 +48,7 @@ function drawBackground(){
   ctx.fillStyle = "#000000"
   ctx.textAlign = 'center';
   ctx.fillText("Hexbot: Averages", appWidth/2, 100);
+  ctx.fillText("Click for another set of colors", appWidth/2, 150);
   ctx.font = "20px Verdana";
   ctx.fillText("Averaged Color", appWidth/2, 200);
   ctx.fillText("Colors Averaged: ", appWidth/2, appHeight/2 + 100);
