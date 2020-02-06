@@ -32,10 +32,11 @@
 			width: 15%;
 			position: fixed;
 			z-index: 1;
-			top: 250px;
+			top: 100px;
 			left: 45px;
 			background: var(--main-bg-color);
 			padding: 4px;
+			align-content:middle;
 		}
 
 		.sidenav a {
@@ -71,12 +72,12 @@
 			margin-left: 0;
 			padding: 10px 10px 10px 10px;
 			font-family: 'Montserrat', sans-serif;
-			font-size: 38px;
-			font-weight: 200;
+			font-size: 20px;
+			font-weight: 400;
 			text-decoration: none;
 			display: block;
 			text-align: left;
-			text-indent: 20%;
+			text-indent: 5%;
 		}
 
 		.header a {
@@ -119,7 +120,7 @@
 		}
 
 		.rectangle {
-			height: 100px;
+			height: 50px;
 			width: 100%;
 			background-color: var(--title1);
 		}
@@ -127,37 +128,44 @@
 		a+a {
 			margin-left: 20%;
 		}
+
+		img.a{
+			position: relative;
+			top: -25px;
+		}
 	</style>
 </head>
 
 <body>
 
 	<!-- header -->
-	<div class="rectangle">
+	<div class = "rectangle">
 		<div class="header">
 			<a href="index.html">tina does stuff</a>
-			<a href="https://github.com/tinam-26">github</a>
 		</div>
 	</div>
 
 	<!--Sidebar-->
-	<!--
+	
     <div class = "sidenav">
-    	<a href="software.html">Software</a>
-    	<a href="#">Data</a>
-    	<a href="#">Github</a>
-    	<a href="#">Contact</a>
+		<img class="a" src= "https://avatars1.githubusercontent.com/u/18502544?s=460&v=4" height=200px width=200px> </img>
+    	<a href="software.html">games</a>
+    	<a href="#">bits and bobs</a>
+    	<a href="https://github.com/tinam-26">github</a>
     </div>
--->
+
 
 	<!--content-->
 
 	<div class="main">
-		
 		<div class="post">
 			<h1>games 'n stuff</h1>
 			<img src = "https://img.itch.zone/aW1nLzI2NDk1MDIucG5n/347x500/v%2FXkM5.png">
 			<p>time hackers</p>
+		</div>
+		<div class="post">
+			<h1>bits 'n bobs</h1>
+			<p>javascipt color average</p>
 		</div>
 	</div>
 
