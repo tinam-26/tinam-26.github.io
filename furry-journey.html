@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>tina m</title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata:100,200,400|Montserrat:100,300,400"
+		rel="stylesheet">
+
+	<style>
+		:root {
+			--main-bg-color: #061414;
+			--sec-bg-color: #231651;
+			--title1: #44CFCB;
+			--title2: #2374AB;
+			--accent: #FF8484;
+			--textColor: #D6FFF6;
+		}
+
+		body {
+			background: var(--main-bg-color);
+		}
+
+		.sidenav {
+			width: 15%;
+			position: fixed;
+			z-index: 1;
+			top: 100px;
+			left: 45px;
+			background: var(--main-bg-color);
+			padding: 4px;
+			align-content:middle;
+		}
+
+		.sidenav a {
+			padding: 6px 8px 6px 16px;
+			font-family: 'Montserrat', sans-serif;
+			text-decoration: none;
+			font-size: 28px;
+			color: var(--title1);
+			display: block;
+		}
+
+		.sidenav a:hover {
+			color: var(--accent);
+		}
+
+		.main {
+			margin-left: 300px;
+			font-size: 28px;
+			padding: 0px 10px;
+			font-family: 'Montserrat', sans-serif;
+			text-decoration: none;
+			display: block;
+
+		}
+
+		.main p {
+			color: var(--textColor);
+			font-family: 'Inconsolata', monospace;
+			font-size: 20px
+		}
+
+		.header {
+			margin-left: 0;
+			padding: 10px 10px 10px 10px;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 20px;
+			font-weight: 400;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+			text-indent: 5%;
+		}
+
+		.header a {
+			text-decoration: none;
+			display: inline;
+			color: var(--main-bg-color);
+		}
+
+		.header a:hover {
+			color: var(--accent);
+		}
+
+		.post {
+			background: var(--sec-bg-color);
+			margin: 0, auto;
+			padding: 20px 6px 20px 6px;
+			display:inline-block;
+			align-content: center;
+			text-align: center; 
+		}
+
+		.post p {
+			color: var(--textColor);
+			font-family: 'Inconsolata', monospace;
+			font-size: 18px;
+			padding-left: 45px;
+			padding-right: 45px;
+		}
+
+		.post h1 {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 32px;
+			font-weight: 300;
+			color: var(--textColor);
+		}
+
+		.post img{
+			display: inline;
+			padding: 5%; 
+		}
+
+		.rectangle {
+			height: 50px;
+			width: 100%;
+			background-color: var(--title1);
+		}
+
+		a+a {
+			margin-left: 20%;
+		}
+
+		img.a{
+			position: relative;
+			top: -25px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- header -->
+	<div class = "rectangle">
+		<div class="header">
+			<a href="index.html">tina does stuff</a>
+		</div>
+	</div>
+
+	<!--Sidebar-->
+	
+    <div class = "sidenav">
+		<img class="a" src= "https://avatars1.githubusercontent.com/u/18502544?s=460&v=4" height=200px width=200px> </img>
+    	<a href="software.html">games</a>
+    	<a href="#">bits and bobs</a>
+    	<a href="https://github.com/tinam-26">github</a>
+    </div>
+
+
+	<!--content-->
+
+	<div class="main">
+		<div class="post">
+			<a href = "https://github.com/tinam-26/furry-journey/tree/master">
+			<h1>watch me</h1>
+			</a>
+			    <iframe width="560" height="315" src="https://www.youtube.com/embed/RVdZs8Vh0O0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        	
+		</div>
+	</div>
+
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
