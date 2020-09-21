@@ -17,7 +17,7 @@
 	<style>
 		:root {
 			--main-bg-color: #061414;
-			--sec-bg-color: #231651;
+			--sec-bg-color: #020007;
 			--title1: #44CFCB;
 			--title2: #2374AB;
 			--accent: #FF8484;
@@ -53,9 +53,9 @@
 		}
 
 		.main {
-			margin-left: 300px;
+			
 			font-size: 28px;
-			padding: 0px 10px;
+			padding: 10px 10px;
 			font-family: 'Montserrat', sans-serif;
 			text-decoration: none;
 			display: block;
@@ -69,7 +69,8 @@
 		}
 
 		.header {
-			margin-left: 0;
+			top: 0; 
+			overflow: hidden;
 			padding: 10px 10px 10px 10px;
 			font-family: 'Montserrat', sans-serif;
 			font-size: 20px;
@@ -77,6 +78,10 @@
 			text-decoration: none;
 			text-align: left;
 			text-indent: 5%;
+			position: fixed; 
+			height: 50px;
+			width: 100%;
+			background-color: var(--title1);
 		}
 
 		.header a {
@@ -118,15 +123,15 @@
 			padding: 5%; 
 		}
 
-		.rectangle {
-			height: 50px;
-			width: 100%;
-			background-color: var(--title1);
-		}
 
 		img.a{
 			position: relative;
 			top: -25px;
+		}
+
+		.intro{
+			height: 100vh; 
+			text-align: center;
 		}
 	</style>
 </head>
@@ -134,25 +139,29 @@
 <body>
 
 	<!-- header -->
-	<div class = "rectangle">
+
 		<div class="header">
 			<a href="index.html">tina does stuff</a>
 		</div>
-	</div>
+
 
 	<!--Sidebar-->
-	
+	<!--
     <div class = "sidenav">
-		<img class="a" src= "https://avatars1.githubusercontent.com/u/18502544?s=460&v=4" height=200px width=200px> </img>
 		<a href="#vidya_games">games</a> 
 		<a href="#bits">bits and bobs</a>
 		<a href="https://toastylilghosty.itch.io/">itch.io</a>
     	<a href="https://github.com/tinam-26">github</a>
     </div>
-
+	-->
 
 	<!--content-->
 	<div class="main">
+		<div class = "intro" id = "intro">
+			<h1>hello</h1>
+			<h2>welcome to my bad html site</h2>
+			<p>i am tina. i make things sometimes. please pay me</p>
+		</div>
 		<div class="post" id = "vidya_games">
 				<h1>games 'n stuff</h1>
 			<div class = "post">
@@ -194,7 +203,15 @@
 	</div>
 
 
+	<script>
+		window.onscroll = function() {scrollFunction()};
 
+		function scrollFunction() {
+  			if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    			document.getElementById("vidya_games").style.fontSize = "300px";
+  			}
+		}
+  </script>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
