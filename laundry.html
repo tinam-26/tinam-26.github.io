@@ -160,15 +160,19 @@
     </div>
 	-->
 
-	<!--content-->
-	<div class="main">
-		<div class = "intro" id = "intro">
-			<h1>hello</h1>
-			<h1>laundry is boring</h1>
-			<p>i am tina. i make things sometimes. </p>
-			<p>also i am aware the html for this site is so so bad. i am not a web dev</p>
-		</div>
-	
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "0e68b2dd-7b27-4dba-a959-30d4d320a2b1", // The ID of this integration.
+      region: "us-east", // The region your integration is hosted in.
+      serviceInstanceID: "3b841624-e2e6-4485-9990-3fbd9e312bc9", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
 
   </script>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
